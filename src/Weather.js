@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { TailSpin } from "react-loader-spinner";
 
 export default function Weather(props) {
   function handleResponse(response) {
@@ -13,5 +14,5 @@ export default function Weather(props) {
 
   axios.get(apiUrl).then(handleResponse);
 
-  return <h2>Hello</h2>;
+  return <TailSpin />;
 }
