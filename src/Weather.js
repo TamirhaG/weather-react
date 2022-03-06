@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import "./Weather.css";
 
 export default function Weather() {
   let weatherData = {
@@ -63,6 +63,10 @@ export default function Weather() {
           </ul>
         </div>
       </div>
+      <footer>
+        <a href="https://github.com/TamirhaG/weather-react">Open-source code</a>
+        , by Tamirha Giraldo
+      </footer>
     </div>
   );
 }
