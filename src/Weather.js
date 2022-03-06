@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { TailSpin } from "react-loader-spinner";
+import { Rings } from "react-loader-spinner";
 
 export default function Weather(props) {
   function handleResponse(response) {
@@ -14,5 +14,9 @@ export default function Weather(props) {
 
   axios.get(apiUrl).then(handleResponse);
 
-  return <TailSpin />;
+  return (
+    <div className="flex justify-center items-center ">
+      <Rings color="white" height={80} width={80} />
+    </div>
+  );
 }
